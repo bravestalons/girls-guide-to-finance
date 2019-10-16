@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+.navbar-brand {
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+}
+
+h1,
+.navbar-nav a {
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+}
+.carousel, .item, .active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel {
+    margin-bottom: 60px;
+}
+.container {
+    display: flex;
+}
