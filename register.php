@@ -32,7 +32,6 @@ if(isset($_POST['register'])){
     // if the save query is successful, then the user is already registered then switch to the login page
     if($saved) header("Location: login.php");
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +40,7 @@ if(isset($_POST['register'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -66,7 +65,8 @@ if(isset($_POST['register'])){
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input class="form-control" type="email" name="email" placeholder="Email" required/>
+                        <input class="form-control" type="email" name="email"
+                        placeholder="Email" pattern="^([0-9]{9})|([A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})$"required/>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -81,7 +81,6 @@ if(isset($_POST['register'])){
             </div>
         </div>
     </div>
-</div>
 
 <script src="https://kit.fontawesome.com/97b30038e7.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -109,7 +109,7 @@
                         <div class="card-deck">
                             <div class="col-md-6 col-lg-4 pb-3">
                                 <div class="card card-custom bg-white border-white border-0">
-                                    <div class="card-custom-img" style="background-image: url('img/stephen.jpg')"></div>
+                                    <div class="card-custom-img" style="background-image: url('img/budget1.jpg')"></div>
                                     <div class="card-custom-avatar">
                                         <img class="img-fluid" src="icons/money-bag.svg" alt="Money Bag" />
                                     </div>
